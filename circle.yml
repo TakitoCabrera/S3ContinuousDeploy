@@ -1,8 +1,0 @@
-dependencies:
-    override:
-        - sudo pip install awscli
-deployment:
-  prod:
-    branch: master
-    commands:
-      - aws s3 sync ~/Desktop/S3ContinuousDeploy s3://circleci-takito --delete
